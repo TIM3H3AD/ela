@@ -4,7 +4,7 @@ class Api::V1::ReportsController < ApplicationController
         # GET /reports
         # GET /reports.json
         def index
-          @reports = Report.all.order(brand: :asc)
+          @reports = Report.all.order(course: :asc)
           render json: @reports
         end
       
@@ -61,7 +61,7 @@ class Api::V1::ReportsController < ApplicationController
       
           # Only allow a list of trusted parameters through.
           def report_params
-            params.permit(:brand, :style, :country, :quantity)
+            params.permit(:student_name, :course, :level, :unit, :classroom, :greeting, :salutation, :scored_lead_0, :scored_lead_1, :scored_lead_2, :scored_lead_3, :scored_lead_4)
           end
       end
 end

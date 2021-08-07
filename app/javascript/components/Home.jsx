@@ -11,7 +11,7 @@ export default () => (
     <Content style={{ padding: "0 50px" }}>
       <div className="site-layout-content" style={{ margin: "100px auto" }}>
         <h1>DINO's Rocket Report Templates!</h1>
-        <Beers />
+        <Reports />
       </div>
     </Content>
     <Footer style={{ textAlign: "center" }}>e-Laoshi © 2021</Footer>

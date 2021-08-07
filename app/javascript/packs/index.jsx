@@ -1,5 +1,7 @@
 import React from "react";
-import Routes from "../routes/index";
-import "antd/dist/antd.css";
+import { render } from "react-dom";
+import App from "../components/App";
 
-export default () => <>{Routes}</>;
+document.addEventListener("DOMContentLoaded", () => {
+  render(<App />, document.body.appendChild(document.createElement("div")));
+});
